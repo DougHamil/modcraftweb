@@ -1,0 +1,70 @@
+/*
+ * lightest: #FFFFFF
+ * lighter: #E0E0CC
+ * light: #C4C9BB
+ * dark: #544C45
+ * accent: #E89D1D
+ */
+$lightest-color:#FFFFFF;
+$lighter-color:#E0E0CC;
+$light-color:#C4C9BB;
+$dark-color:#544C46;
+$accent-color:#E89D1D;
+$width:1000px;
+$step-height:500px;
+
+body
+{
+	background-color: $light-color;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+#container
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:$width;
+}
+
+#header
+{
+  background-color: $lighter-color;
+	padding:10px;
+	color:$dark-color;
+	box-shadow:0px 5px 5px #888;
+	width:$width;
+}
+
+.step
+{
+	margin-top:10px;
+	background-color: $lighter-color;
+	padding:10px;
+	color:$dark-color;
+	box-shadow:0px 5px 5px #888;
+	position:absolute;
+	width:$width;
+	height:$step-height;
+}
+
+.step .title
+{
+	color:$lighter-color * 0.9;
+	display:block;
+	padding:0;
+	margin:0;
+	font-size:$step-height;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.step .contents
+{
+	position:absolute;
+	top:0;
+	left:0;
+	margin:10px;
+	font-size:24;
+}
+
